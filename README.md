@@ -23,37 +23,21 @@ Ele permite **coletar**, **classificar** e **armazenar** feedbacks de forma simp
 📂 Estrutura do Projeto
 ```
 backend/
-├── static/
-│   ├── css/
-│   │   └── style.css          # Frontend styles
-│   └── js/
-│       └── script.js          # Frontend JavaScript (if needed)
-├── templates/
-│   └── index.html             # HTML template for feedback listing
-├── classifier.py              # Feedback classification logic
-├── database.py                # SQLAlchemy models and database setup
-├── main.py                    # FastAPI app and routes
-├── proxy.py                   # Proxy router for Verbeux FeedAI API
-├── requirements.txt           # Python dependencies
-└── README.md                  # Project documentation (this file)
-
-```
-.
 ├── backend/
 │   ├── main.py              # API Flask com os endpoints
 │   ├── classifier.py        # Lógica de classificação de feedbacks
 │   ├── database.py          # Banco de dados SQLite e funções de acesso
 │   └── feedback.db          # Banco de dados local (ignorado no Git)
-├── frontend_files/          # Arquivos estáticos (CSS e JS)
-│   ├── style.css
-│   └── script.js
-├── html_views/              # Template HTML (interface web)
-│   └── index.html
-├── tests/                   # Scripts de testes manuais
+├── frontend_files/
+│   ├── style.css            # Estilos do frontend (CSS)
+│   └── script.js            # Lógica JavaScript do frontend
+├── html_views/
+│   └── index.html           # Template HTML da interface web
+├── tests/
 │   ├── test_feedback.py     # Teste de envio e listagem de feedbacks
-│   └── test_request.py      # Teste de envio POST
+│   └── test_request.py      # Teste de envio POST para a API
 ├── requirements.txt         # Dependências Python
-└── .gitignore               # Arquivos ignorados pelo Git
+└── .gitignore               # Arquivos e pastas ignoradas pelo Git
 
 ---
 
