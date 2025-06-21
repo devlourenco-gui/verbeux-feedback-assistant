@@ -24,19 +24,33 @@ Ele permite **coletar**, **classificar** e **armazenar** feedbacks de forma simp
 
 .
 ├── backend/
+
 │   ├── main.py              # API Flask com os endpoints
+
 │   ├── classifier.py        # Lógica de classificação de feedbacks
+
 │   ├── database.py          # Banco de dados SQLite e funções de acesso
+
 │   └── feedback.db          # Banco de dados local (ignorado no Git)
+
 ├── frontend_files/          # Arquivos estáticos (CSS e JS)
+
 │   ├── style.css
+
 │   └── script.js
+
 ├── html_views/              # Template HTML (interface web)
+
 │   └── index.html
+
 ├── tests/                   # Scripts de testes manuais
+
 │   ├── test_feedback.py     # Teste de envio e listagem de feedbacks
+
 │   └── test_request.py      # Teste de envio POST
+
 ├── requirements.txt         # Dependências Python
+
 └── .gitignore               # Arquivos ignorados pelo Git
 
 ---
